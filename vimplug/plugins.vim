@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'jbyuki/instant.nvim'
+
 Plug 'Chiel92/vim-autoformat'
 
 Plug 'xolox/vim-misc'
@@ -86,8 +88,6 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
 Plug 'sonph/onehalf', {'rtp': 'vim'}
 
 Plug 'dracula/vim'
@@ -96,9 +96,9 @@ Plug 'dracula/vim'
 " local plugins
 Plug '~/vim-plugins/pixelemconverter'
 Plug '~/vim-plugins/http-client'
+Plug '~/vim-plugins/tcpClient'
 call plug#end()
-if filereadable(expand("~/.vimrc.plug.config"))
-	source ~/.vimrc.plug.config
+if filereadable(expand("~/.config/nvim/vimplug/plugins.config.vim"))
+	source ~/.config/nvim/vimplug/plugins.config.vim 
 endif
-
 

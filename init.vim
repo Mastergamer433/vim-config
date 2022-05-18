@@ -59,6 +59,7 @@ set cursorline
 set number
 
 
+
 " airline
 """let g:airline#extensions#tabline#enabled = 1
 " files
@@ -69,4 +70,4 @@ if filereadable(expand("~/.config/nvim/vimplug/plugins.vim"))
 	source ~/.config/nvim/vimplug/plugins.vim 
 endif
 
-
+autocmd VimEnter * NERDTree
