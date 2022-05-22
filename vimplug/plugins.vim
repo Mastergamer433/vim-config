@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'eslint/eslint'
+
 Plug 'jbyuki/instant.nvim'
 
 Plug 'Chiel92/vim-autoformat'
@@ -70,7 +72,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 
 Plug 'tmhedberg/SimpylFold'
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile'  }
 
 Plug 'vim-syntastic/syntastic'
 

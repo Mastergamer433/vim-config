@@ -2,6 +2,7 @@ let g:SimpylFold_docstring_preview=1
 
 let g:instant_username = "MG433"
 
+let g:UltiSnipsExpandTrigger = "<tab>"
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
