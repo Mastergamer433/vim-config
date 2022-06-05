@@ -22,7 +22,7 @@ nnoremap <C-o><C-d><C-p> :OmniSharpPreviewDefinition<CR>
 
 map <C-v>nu :set invnumber<CR>
 
-map sov :source ~/.vimrc<CR>
+map sov :source ~/.config/nvim/init.vim<CR>
 "" Formatting
 " for js
 autocmd FileType javascript noremap <c-k> :call JsBeautify()<cr>
